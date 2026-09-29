@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  index.html — 黄晨航 · 大数据方向求职个人主页
+  IT应届生简约科技风 · 相对路径 · 可部署 Gitee Pages
+  配套样式：style.css   素材：assets/
+  ============================================================
+-->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黄晨航 · 大数据方向求职主页</title>
+  <!-- favicon：内联 SVG，沿用页面科技蓝主色 -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232E5FA3'/%3E%3Ctext x='32' y='46' font-size='40' font-family='Microsoft YaHei,Arial' text-anchor='middle' fill='white'%3E%E9%BB%84%3C/text%3E%3C/svg%3E">
+  <!-- 本地样式表（相对路径，禁止外部 CDN） -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ Banner 头部（我是谁） ============ -->
+  <header class="banner">
+    <img src="assets/banner-1.jpg" alt="banner 背景图">
+    <div class="banner-overlay">
+      <h1>黄晨航</h1>
+      <p class="tagline">大数据技术专业 · 求职大数据处理实习生</p>
+      <div class="banner-mail">
+        <span id="mail-text">18350032206@163.com</span>
+        <button type="button" onclick="copyMail()">复制邮箱</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ 个人信息 ============ -->
+  <section id="profile">
+    <div class="container">
+      <div class="section-head"><span class="bar"></span><h2>个人信息</h2></div>
+      <div class="profile-card">
+        <div class="profile-row"><span class="label">姓名</span><strong>黄晨航</strong></div>
+        <div class="profile-row"><span class="label">现居</span><span>福州</span></div>
+        <div class="profile-row"><span class="label">电话</span><span>18350032206</span></div>
+        <div class="profile-row"><span class="label">邮箱</span><span>18350032206@163.com</span></div>
+        <div class="profile-row"><span class="label">求职状态</span><span>24级大数据技术专业在校生 · 可暑期实习</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 求职意向 ============ -->
+  <section id="intent">
+    <div class="container">
+      <div class="section-head"><span class="bar"></span><h2>求职意向</h2></div>
+      <div class="intent">
+        <span class="target">大数据处理实习生 / 数据分析助理</span>
+        <span class="desc">希望用所学的 Python、MySQL、数据清洗基础，参与数据处理与分析相关的工作。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 专业技能（我会什么） ============ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head"><span class="bar"></span><h2>专业技能</h2></div>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>数据技术</h3>
+          <ul>
+            <li>Python 基础编程</li>
+            <li>Pandas 数据处理</li>
+            <li>MySQL 基础查询</li>
+            <li>数据清洗基础</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>系统工具</h3>
+          <ul>
+            <li>Linux 基础命令</li>
+            <li>Office / WPS 办公软件</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>通用能力</h3>
+          <ul>
+            <li>团队协作</li>
+            <li>文档整理</li>
+            <li>任务执行细致踏实</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 实训项目经历（我做过什么） ============ -->
+  <section id="works">
+    <div class="container">
+      <div class="section-head"><span class="bar"></span><h2>实训项目经历</h2></div>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Python课程大作业：学生成绩统计小工具</h3>
+          <div class="meta">课程独立项目 · 2024.11</div>
+          <p>独立开发学生成绩统计工具，基于 Python 实现成绩录入、多维度统计与排序输出。</p>
+          <span class="stat">约 230 行代码 · 作业 88 分</span>
+        </div>
+        <div class="project-card">
+          <h3>MySQL课程设计：校园图书简易数据库</h3>
+          <div class="meta">课程设计 · 2024.12</div>
+          <p>基于 MySQL 完成校园图书简易数据库设计，梳理实体关系并编写查询统计语句。</p>
+          <span class="stat">3 张数据表 · 18 条查询 SQL · 85 分</span>
+        </div>
+        <div class="project-card">
+          <h3>大数据实训：电商简易数据清洗</h3>
+          <div class="meta">课程实训 · 2025.04</div>
+          <p>参与电商模拟数据集预处理实训，使用 Pandas 完成数据去重、缺失值处理与字段格式标准化。</p>
+          <span class="stat">处理 1200 条数据</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 教育背景 ============ -->
+  <section id="education">
+    <div class="container">
+      <div class="section-head"><span class="bar"></span><h2>教育背景</h2></div>
+      <div class="edu-card">
+        <h3>【学校名称】 · 大数据技术专业</h3>
+        <div class="meta">2024.09 – 2027.06</div>
+        <ul>
+          <li>2024-2025 学年第一学期综合测评班级第 12 名，获校级三等奖学金</li>
+          <li>主修课程：Python程序设计、数据库原理与应用、大数据采集与预处理、Linux操作系统</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 证书荣誉 ============ -->
+  <section id="honors">
+    <div class="container">
+      <div class="section-head"><span class="bar"></span><h2>证书荣誉</h2></div>
+      <div class="honor-list">
+        <div class="honor-item">
+          <div class="name">全国计算机一级 MS Office 合格证书</div>
+          <div class="date">2024.12</div>
+        </div>
+        <div class="honor-item">
+          <div class="name">校内大数据技能选拔赛参与奖</div>
+          <div class="date">2025.04</div>
+        </div>
+        <div class="honor-item">
+          <div class="name">校级三等奖学金</div>
+          <div class="date">2025.01</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 自我评价 ============ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head"><span class="bar"></span><h2>自我评价</h2></div>
+      <div class="eval-card">
+        具备 Python、MySQL 基础与数据清洗实训经验，有完整课程项目交付经历。做事细致有条理，能配合团队完成数据处理类任务，愿意持续学习与成长。
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 页脚 · 下载简历 ============ -->
+  <footer>
+    <div class="container">
+      <p>感谢浏览 · 期待与您的团队一起成长</p>
+      <!-- 下载按钮：相对路径指向 assets/resume.pdf -->
+      <a class="download-btn" href="assets/resume.pdf" download>下载我的简历（PDF）</a>
+    </div>
+  </footer>
+
+  <!-- 复制成功提示 -->
+  <div class="toast" id="toast">邮箱已复制到剪贴板</div>
+
+  <!-- ============ 原生 JS：邮箱一键复制 ============ -->
+  <script>
+    function copyMail() {
+      // 1. 取当前显示在页面上的邮箱文本
+      var mail = document.getElementById('mail-text').textContent.trim();
+      // 2. 通过临时 textarea 写入剪贴板（兼容 file:// 本地运行）
+      var ta = document.createElement('textarea');
+      ta.value = mail;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('邮箱已复制：' + mail);
+      } catch (err) {
+        showToast('复制失败，请手动复制邮箱');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showToast(msg) {
+      var t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      // 2 秒后隐藏
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(function () {
+        t.classList.remove('show');
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
